@@ -1,6 +1,14 @@
 # trusty-ssh
 A Docker image based on Ubuntu Trusty, with SSH access
 
+Download
+--------
+
+Docker image is available from docker hub:
+```
+docker pull vjeko/trusty-ssh
+```
+
 Usage
 -----
 
