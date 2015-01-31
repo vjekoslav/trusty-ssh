@@ -3,7 +3,7 @@ MAINTAINER Vjekoslav Nikolic <vnikolic@gmail.com>
 
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN apt-get install -y openssh-server supervisor sudo
+RUN apt-get install -y openssh-server supervisor sudo rsyslog
 
 RUN mkdir -p /var/run/sshd
 RUN mkdir -p /var/log/supervisor

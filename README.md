@@ -19,5 +19,4 @@ Installed packages
 * openssh-server
 * supervisor
 * sudo
-
-
+* rsyslog
