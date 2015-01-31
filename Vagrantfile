@@ -16,7 +16,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       d.name = "#{DOCKER_IMAGE_NAME}"
       d.remains_running = true
       d.has_ssh = true
-      d.ports = []
     end
   end
 end
