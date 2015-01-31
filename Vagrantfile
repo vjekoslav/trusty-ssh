@@ -11,7 +11,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   DOCKER_IMAGE_NAME = "trusty-ssh"
 
   config.vm.define "trusty" do |t|
-    t.ssh.password = "vagrant"
     t.vm.provider "docker" do |d|
       d.image = "#{DOCKER_IMAGE_REPO}/#{DOCKER_IMAGE_NAME}:latest"
       d.name = "#{DOCKER_IMAGE_NAME}"
