@@ -21,9 +21,9 @@ RUN chown -R vagrant:vagrant /home/vagrant/
 RUN mkdir -p /etc/sudoers.d && echo "vagrant ALL= NOPASSWD: ALL" > /etc/sudoers.d/vagrant && chmod 0440 /etc/sudoers.d/vagrant
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-ADD run /usr/local/bin/
-RUN chmod +x /usr/local/bin/run
+ADD entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/entrypoint.sh
 
 EXPOSE 22
 
-CMD ["/usr/local/bin/run"]
+CMD ["/usr/local/bin/entrypoint.sh"]
